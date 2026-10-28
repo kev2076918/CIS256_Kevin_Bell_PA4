@@ -3,7 +3,7 @@
 # Programming Assignment 4
 
 
-#referenc urls:
+#reference urls:
 #https://www.datacamp.com/tutorial/how-to-convert-a-list-to-a-string-in-python
 #https://mimo.org/glossary/python/string-join-method
 #https://stackoverflow.com/questions/493819/why-is-it-string-joinlist-instead-of-list-joinstring
