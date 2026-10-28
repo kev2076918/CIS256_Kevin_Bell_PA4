@@ -17,7 +17,10 @@
 #https://www.geeksforgeeks.org/python/python-string-replace/
 #https://realpython.com/replace-string-python/
 #https://www.serveracademy.com/blog/python-replace-function
-
+#https://stackoverflow.com/questions/42788644/how-to-test-random-choice-in-python
+#https://dev.to/szabgab/generate-random-values-and-test-them-in-python-1obl
+#https://note.nkmk.me/en/python-random-choice-sample-choices/
+#https://note.nkmk.me/en/python-pprint-pretty-print/
 
 
 import random
@@ -35,16 +38,19 @@ wordlist = [
 
 
 def shuffle_random():
+    """returns a shuffled wordlist"""
     random.shuffle(wordlist)
     return wordlist
 
    
 def show_random():
+    """returns random.choice word value from shuffled wordlist"""
     some_random = random.choice(shuffle_random())
     return some_random
 
 
 def show_combined(rand_word: str):
+    """returns str object with '_' matching the length of random_word"""
     rwlength = len(rand_word)
     display = ("_" * rwlength)
     space = ' '
@@ -52,7 +58,6 @@ def show_combined(rand_word: str):
     return combined
     
 
-#print()
 #str variable random_word
 #assigned show_random()
 #return value
