@@ -52,21 +52,21 @@ def show_combined(rand_word: str):
     return combined
 
 
-def compare_guess(guess):
-    #guess = 's'
-    vowels = 'aeiouy'
-    #letters = 'bnps'
-    consonants = 'bcdfghjklmpqrstvwxz'
-    #for guess in display:
-    for letter in display:
-        if letter in guess:
-        #if guess in vowels or guess in consonants:
-        #if guess in letter:
-            print(guess, end=" ")
-        else:
-            print("_", end=" ")
-    #attempts -= 1
-    #print(f"\nYou have {attempts} attempts left!\n")
+#def compare_guess(guess):
+#    #guess = 's'
+#    vowels = 'aeiouy'
+#    #letters = 'bnps'
+#    consonants = 'bcdfghjklmpqrstvwxz'
+#    #for guess in display:
+#    for letter in display:
+#        if letter in guess:
+#        #if guess in vowels or guess in consonants:
+#        #if guess in letter:
+#            print(guess, end=" ")
+#        else:
+#            print("_", end=" ")
+#    #attempts -= 1
+#    #print(f"\nYou have {attempts} attempts left!\n")
     
 
 print()
@@ -93,6 +93,7 @@ print()
 billboard = show_combined(random_word)
 #print(billboard)
 print(f"billboard is: \n{billboard}")
+#print(f"\n{billboard}")
 #print(len(billboard))
 
 #keep count of "_" in billboard variable
@@ -137,8 +138,9 @@ while True:
         tracker += guess
 
         #visual validation
-        print(f"tracker is: {tracker}")
-            #compare_guess(guess)
+        #print(f"tracker is: {tracker}")
+        
+        #compare_guess(guess)
 
         #check each letter
         #in the random_word
@@ -149,10 +151,6 @@ while True:
             #print the letter
             if letter in tracker:
                 print(letter, end=" ")
-                
-                #decrement uscore to
-                #validate word has
-                #been guessed!
                 uscore -= 1
 
             #else print an underscore
@@ -445,4 +443,352 @@ while True:
 #attempts left is 5
 #uscore is 0
 #You guessed the word!
+#
+
+
+
+#
+#Python 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)] on win32
+#Enter "help" below or click "Help" above for more information.
+#
+#============= RESTART: C:\Users\midcw\Desktop\PA4\guess_the_word.py ============
+#
+#windsurfing
+#
+#billboard is: 
+#_ _ _ _ _ _ _ _ _ _ _
+#attempts left is 15
+#uscore is 11
+#
+#Enter a letter to guess the word: a
+#a
+#tracker is: a
+#_ _ _ _ _ _ _ _ _ _ _ 
+#billboard has 11 dashes left
+#
+#You have 14 attempts left!
+#
+#attempts left is 14
+#uscore is 11
+#
+#Enter a letter to guess the word: e
+#e
+#tracker is: ae
+#_ _ _ _ _ _ _ _ _ _ _ 
+#billboard has 11 dashes left
+#
+#You have 13 attempts left!
+#
+#attempts left is 13
+#uscore is 11
+#
+#Enter a letter to guess the word: i
+#i
+#tracker is: aei
+#_ i _ _ _ _ _ _ i _ _ 
+#billboard has 9 dashes left
+#
+#You have 12 attempts left!
+#
+#attempts left is 12
+#uscore is 9
+#
+#Enter a letter to guess the word: o
+#o
+#tracker is: aeio
+#_ i _ _ _ _ _ _ i _ _ 
+#billboard has 9 dashes left
+#
+#You have 11 attempts left!
+#
+#attempts left is 11
+#uscore is 9
+#
+#Enter a letter to guess the word: u
+#u
+#tracker is: aeiou
+#_ i _ _ _ u _ _ i _ _ 
+#billboard has 8 dashes left
+#
+#You have 10 attempts left!
+#
+#attempts left is 10
+#uscore is 8
+#
+#Enter a letter to guess the word: n
+#n
+#tracker is: aeioun
+#_ i n _ _ u _ _ i n _ 
+#billboard has 6 dashes left
+#
+#You have 9 attempts left!
+#
+#attempts left is 9
+#uscore is 6
+#
+#Enter a letter to guess the word: g
+#g
+#tracker is: aeioung
+#_ i n _ _ u _ _ i n g 
+#billboard has 5 dashes left
+#
+#You have 8 attempts left!
+#
+#attempts left is 8
+#uscore is 5
+#
+#Enter a letter to guess the word: d
+#d
+#tracker is: aeioungd
+#_ i n d _ u _ _ i n g 
+#billboard has 4 dashes left
+#
+#You have 7 attempts left!
+#
+#attempts left is 7
+#uscore is 4
+#
+#Enter a letter to guess the word: w
+#w
+#tracker is: aeioungdw
+#w i n d _ u _ _ i n g 
+#billboard has 3 dashes left
+#
+#You have 6 attempts left!
+#
+#attempts left is 6
+#uscore is 3
+#
+#Enter a letter to guess the word: s
+#s
+#tracker is: aeioungdws
+#w i n d s u _ _ i n g 
+#billboard has 2 dashes left
+#
+#You have 5 attempts left!
+#
+#attempts left is 5
+#uscore is 2
+#
+#Enter a letter to guess the word: r
+#r
+#tracker is: aeioungdwsr
+#w i n d s u r _ i n g 
+#billboard has 1 dashes left
+#
+#You have 4 attempts left!
+#
+#attempts left is 4
+#uscore is 1
+#
+#Enter a letter to guess the word: z
+#z
+#tracker is: aeioungdwsrz
+#w i n d s u r _ i n g 
+#billboard has 1 dashes left
+#
+#You have 3 attempts left!
+#
+#attempts left is 3
+#uscore is 1
+#
+#Enter a letter to guess the word: x
+#x
+#tracker is: aeioungdwsrzx
+#w i n d s u r _ i n g 
+#billboard has 1 dashes left
+#
+#You have 2 attempts left!
+#
+#attempts left is 2
+#uscore is 1
+#
+#Enter a letter to guess the word: h
+#h
+#tracker is: aeioungdwsrzxh
+#w i n d s u r _ i n g 
+#billboard has 1 dashes left
+#
+#You have 1 attempts left!
+#
+#attempts left is 1
+#uscore is 1
+#
+#Enter a letter to guess the word: f
+#f
+#tracker is: aeioungdwsrzxhf
+#w i n d s u r f i n g 
+#billboard has 0 dashes left
+#
+#You have 0 attempts left!
+#
+#attempts left is 0
+#uscore is 0
+#Great job! You guessed the word!
+#
+
+
+#
+#Python 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)] on win32
+#Enter "help" below or click "Help" above for more information.
+#
+#============ RESTART: C:\Users\midcw\Desktop\PA4\guess_the_word_b.py ===========
+#
+#windsurfing
+#
+#billboard is: 
+#_ _ _ _ _ _ _ _ _ _ _
+#attempts left is 15
+#uscore is 11
+#
+#Enter a letter to guess the word: a
+#a
+#_ _ _ _ _ _ _ _ _ _ _ 
+#billboard has 11 dashes left
+#
+#You have 14 attempts left!
+#
+#attempts left is 14
+#uscore is 11
+#
+#Enter a letter to guess the word: e
+#e
+#_ _ _ _ _ _ _ _ _ _ _ 
+#billboard has 11 dashes left
+#
+#You have 13 attempts left!
+#
+#attempts left is 13
+#uscore is 11
+#
+#Enter a letter to guess the word: i
+#i
+#_ i _ _ _ _ _ _ i _ _ 
+#billboard has 9 dashes left
+#
+#You have 12 attempts left!
+#
+#attempts left is 12
+#uscore is 9
+#
+#Enter a letter to guess the word: o
+#o
+#_ i _ _ _ _ _ _ i _ _ 
+#billboard has 9 dashes left
+#
+#You have 11 attempts left!
+#
+#attempts left is 11
+#uscore is 9
+#
+#Enter a letter to guess the word: u
+#u
+#_ i _ _ _ u _ _ i _ _ 
+#billboard has 8 dashes left
+#
+#You have 10 attempts left!
+#
+#attempts left is 10
+#uscore is 8
+#
+#Enter a letter to guess the word: n
+#n
+#_ i n _ _ u _ _ i n _ 
+#billboard has 6 dashes left
+#
+#You have 9 attempts left!
+#
+#attempts left is 9
+#uscore is 6
+#
+#Enter a letter to guess the word: g
+#g
+#_ i n _ _ u _ _ i n g 
+#billboard has 5 dashes left
+#
+#You have 8 attempts left!
+#
+#attempts left is 8
+#uscore is 5
+#
+#Enter a letter to guess the word: l
+#l
+#_ i n _ _ u _ _ i n g 
+#billboard has 5 dashes left
+#
+#You have 7 attempts left!
+#
+#attempts left is 7
+#uscore is 5
+#
+#Enter a letter to guess the word: d
+#d
+#_ i n d _ u _ _ i n g 
+#billboard has 4 dashes left
+#
+#You have 6 attempts left!
+#
+#attempts left is 6
+#uscore is 4
+#
+#Enter a letter to guess the word: r
+#r
+#_ i n d _ u r _ i n g 
+#billboard has 3 dashes left
+#
+#You have 5 attempts left!
+#
+#attempts left is 5
+#uscore is 3
+#
+#Enter a letter to guess the word: s
+#s
+#_ i n d s u r _ i n g 
+#billboard has 2 dashes left
+#
+#You have 4 attempts left!
+#
+#attempts left is 4
+#uscore is 2
+#
+#Enter a letter to guess the word: f
+#f
+#_ i n d s u r f i n g 
+#billboard has 1 dashes left
+#
+#You have 3 attempts left!
+#
+#attempts left is 3
+#uscore is 1
+#
+#Enter a letter to guess the word: q
+#q
+#_ i n d s u r f i n g 
+#billboard has 1 dashes left
+#
+#You have 2 attempts left!
+#
+#attempts left is 2
+#uscore is 1
+#
+#Enter a letter to guess the word: a
+#a
+#_ i n d s u r f i n g 
+#billboard has 1 dashes left
+#
+#You have 1 attempts left!
+#
+#attempts left is 1
+#uscore is 1
+#
+#Enter a letter to guess the word: w
+#w
+#w i n d s u r f i n g 
+#billboard has 0 dashes left
+#
+#You have 0 attempts left!
+#
+#attempts left is 0
+#uscore is 0
+#Great job! You guessed the word!
 #
