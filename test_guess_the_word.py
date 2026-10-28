@@ -3,7 +3,8 @@
 # Programming Assignment 4
 
 import random
-from guess_the_word import shuffle_random, show_random
+import pytest
+from guess_the_word import wordlist, random_word, shuffle_random, show_random
 
 wordlist = [
     'skiing', 'skateboarding', 'dancing',
@@ -22,5 +23,7 @@ def test_shuffle_random():
 
 def test_show_random():
     #assert random.choice(shuffle_random()) == 'stalactites'
-    return random.choice(shuffle_random()) == 'stalactites'
+    #return random.choice(shuffle_random()) == 'stalactites'
+    result = random.choice(shuffle_random())
+    assert result in wordlist
 
