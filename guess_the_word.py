@@ -59,7 +59,7 @@ def show_combined(rand_word: str):
 random_word = show_random()
 
 #visual validation
-print(random_word)
+#print(random_word)
 
 #print(len(random_word))
 print()
